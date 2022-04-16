@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+@layer components {
+	.header-button {
+		@apply py-2 px-4 rounded-lg bg-blue-600 text-white shadow-xl shadow-blue-900/20;
+	}
+
+	.body-gradient {
+		@apply -z-[1] h-96 w-full absolute top-0 left-0 right-0 bg-gradient-to-b from-black/25;
+	}
+
+	body {
+		@apply bg-slate-900;
+	}
+}
